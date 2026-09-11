@@ -1,0 +1,9 @@
+{
+  "$schema": "./schemas/marketplace.schema.json",
+  "schemaVersion": 1,
+  "id": "shanten-lens",
+  "name": "向听镜插件市场",
+  "description": "向听镜的插件。",
+  "homepage": "https://github.com/SpCoGov/shanten-lens-marketplace",
+  "contact": "https://github.com/SpCoGov/shanten-lens-marketplace/issues"
+}

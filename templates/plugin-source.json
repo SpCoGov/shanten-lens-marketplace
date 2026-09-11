@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/plugin-source.schema.json",
+  "schemaVersion": 1,
+  "id": "com.example.packet-filter",
+  "repository": "https://github.com/example/shanten-lens-packet-filter",
+  "updateManifestUrl": "https://raw.githubusercontent.com/example/shanten-lens-packet-filter/main/marketplace/update.json",
+  "owners": [
+    "example"
+  ],
+  "status": "active"
+}

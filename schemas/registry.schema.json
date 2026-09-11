@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/SpCoGov/shanten-lens-marketplace/main/schemas/registry.schema.json",
+  "title": "Shanten Lens generated marketplace registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "marketplace", "revision", "generatedAt", "plugins"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "marketplace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"}
+      }
+    },
+    "revision": {"type": "string", "minLength": 1},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "version", "apiVersion", "repository", "package", "publishedAt", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "version": {"type": "string"},
+          "apiVersion": {"type": "integer", "minimum": 1},
+          "minimumAppVersion": {"type": "string"},
+          "author": {"type": "string"},
+          "homepage": {"type": "string", "format": "uri"},
+          "source": {"type": "string", "format": "uri"},
+          "repository": {"type": "string", "format": "uri"},
+          "issues": {"type": "string", "format": "uri"},
+          "license": {"type": "string"},
+          "categories": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+          "package": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["downloadUrl", "sha256", "size"],
+            "properties": {
+              "downloadUrl": {"type": "string", "format": "uri"},
+              "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+              "size": {"type": "integer", "minimum": 1, "maximum": 134217728}
+            }
+          },
+          "releaseNotes": {"type": "string"},
+          "releaseNotesUrl": {"type": "string", "format": "uri"},
+          "publishedAt": {"type": "string", "format": "date-time"},
+          "status": {"enum": ["active", "deprecated", "blocked"]}
+        }
+      }
+    }
+  }
+}

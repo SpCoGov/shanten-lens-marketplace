@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "marketplace": {
+    "id": "shanten-lens",
+    "name": "向听镜插件市场"
+  },
+  "revision": "e7e6619d0142f201",
+  "generatedAt": "2026-09-10T23:44:24.651170Z",
+  "plugins": []
+}

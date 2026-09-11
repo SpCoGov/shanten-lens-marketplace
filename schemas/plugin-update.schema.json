@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/SpCoGov/shanten-lens-marketplace/main/schemas/plugin-update.schema.json",
+  "title": "Shanten Lens plugin update manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "version", "downloadUrl", "sha256", "size", "publishedAt"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schemaVersion": {"const": 1},
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)+$",
+      "maxLength": 128
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+    },
+    "downloadUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github\\.com/[^/]+/[^/]+/releases/download/"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "size": {"type": "integer", "minimum": 1, "maximum": 134217728},
+    "releaseNotes": {"type": "string", "maxLength": 4000},
+    "releaseNotesUrl": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "publishedAt": {"type": "string", "format": "date-time"}
+  }
+}

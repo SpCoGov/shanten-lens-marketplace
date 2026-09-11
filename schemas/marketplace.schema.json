@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/SpCoGov/shanten-lens-marketplace/main/schemas/marketplace.schema.json",
+  "title": "Shanten Lens marketplace",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schemaVersion": {"const": 1},
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1, "maxLength": 80},
+    "description": {"type": "string", "maxLength": 500},
+    "homepage": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "contact": {"type": "string", "format": "uri", "pattern": "^https://"}
+  }
+}
