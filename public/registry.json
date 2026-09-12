@@ -4,7 +4,29 @@
     "id": "shanten-lens",
     "name": "向听镜插件市场"
   },
-  "revision": "e7e6619d0142f201",
-  "generatedAt": "2026-09-10T23:44:24.651170Z",
-  "plugins": []
+  "revision": "13944223867569f4",
+  "generatedAt": "2026-09-12T19:22:47.563395Z",
+  "plugins": [
+    {
+      "id": "top.spco.soulmax",
+      "name": "SoulMax",
+      "version": "0.3.1",
+      "apiVersion": 1,
+      "repository": "https://github.com/SpCoGov/soulmax",
+      "package": {
+        "downloadUrl": "https://github.com/SpCoGov/soulmax/releases/download/v0.3.1/top.spco.soulmax-0.3.1.plugin.zip",
+        "sha256": "2729942b1577ef86fc75e1c8317612aa57ca5b71d97f8ab1c483042988064f58",
+        "size": 227129
+      },
+      "publishedAt": "2026-09-12T19:18:55Z",
+      "status": "active",
+      "description": "在本地配置并修改雀魂角色、皮肤、称号、加载图和常用装扮数据。",
+      "author": "Shanten Lens Contributors",
+      "homepage": "https://github.com/SpCoGov/soulmax",
+      "source": "https://github.com/SpCoGov/soulmax",
+      "issues": "https://github.com/SpCoGov/soulmax/issues",
+      "releaseNotes": "SoulMax 0.3.1 首次独立发布",
+      "releaseNotesUrl": "https://github.com/SpCoGov/soulmax/releases/tag/v0.3.1"
+    }
+  ]
 }

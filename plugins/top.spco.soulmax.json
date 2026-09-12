@@ -1,0 +1,9 @@
+{
+  "$schema": "../schemas/plugin-source.schema.json",
+  "schemaVersion": 1,
+  "id": "top.spco.soulmax",
+  "repository": "https://github.com/SpCoGov/soulmax",
+  "updateManifestUrl": "https://raw.githubusercontent.com/SpCoGov/soulmax/main/marketplace/update.json",
+  "owners": ["SpCoGov"],
+  "status": "active"
+}
