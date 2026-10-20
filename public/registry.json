@@ -4,9 +4,35 @@
     "id": "shanten-lens",
     "name": "向听镜插件市场"
   },
-  "revision": "13944223867569f4",
-  "generatedAt": "2026-09-12T19:22:47.563395Z",
+  "revision": "1a6566c289543d21",
+  "generatedAt": "2026-10-20T11:47:48.403838Z",
   "plugins": [
+    {
+      "id": "top.spco.game-record",
+      "name": "牌谱工具",
+      "version": "0.1.0",
+      "apiVersion": 1,
+      "repository": "https://github.com/SpCoGov/shanten-lens-game-record",
+      "package": {
+        "downloadUrl": "https://github.com/SpCoGov/shanten-lens-game-record/releases/download/v0.1.0/top.spco.game-record-0.1.0-windows-x64.plugin.zip",
+        "sha256": "e8fe2886a5a276e3ff4044f33953a2dca8e2758300a06137afbb8782fc456ebb",
+        "size": 1050002
+      },
+      "publishedAt": "2026-10-20T11:45:18.599325Z",
+      "status": "active",
+      "description": "查看、编辑、导入导出与替换游戏牌谱。市场安装包为 Windows x64；需要包含牌谱插件接口更新的向听镜。",
+      "author": "Shanten Lens Contributors",
+      "homepage": "https://github.com/SpCoGov/shanten-lens-game-record",
+      "source": "https://github.com/SpCoGov/shanten-lens-game-record",
+      "issues": "https://github.com/SpCoGov/shanten-lens-game-record/issues",
+      "license": "Apache-2.0",
+      "categories": [
+        "tools"
+      ],
+      "minimumAppVersion": "3.2.0",
+      "releaseNotes": "牌谱查看、编辑、导入导出、在线获取与一次性替换。需要包含牌谱插件接口更新的向听镜。",
+      "releaseNotesUrl": "https://github.com/SpCoGov/shanten-lens-game-record/releases/tag/v0.1.0"
+    },
     {
       "id": "top.spco.soulmax",
       "name": "SoulMax",
