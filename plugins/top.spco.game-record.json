@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/plugin-source.schema.json",
+  "schemaVersion": 1,
+  "id": "top.spco.game-record",
+  "repository": "https://github.com/SpCoGov/shanten-lens-game-record",
+  "updateManifestUrl": "https://raw.githubusercontent.com/SpCoGov/shanten-lens-game-record/main/marketplace/update.json",
+  "owners": [
+    "SpCoGov"
+  ],
+  "status": "active"
+}
